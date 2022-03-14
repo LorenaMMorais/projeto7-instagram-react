@@ -1,19 +1,4 @@
-function Sugestao(props){
-    const{img, nome, razao} = props;
-    return(
-        <div class="sugestao">
-            <div class="usuario">
-                <img src={img} alt={img}/>
-                <div class="texto">
-                    <div class="nome">{nome}</div>
-                    <div class="razao">{razao}</div>
-                </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-        </div>
-    )
-}
+import Sugestao from "./Sugestao";
 
 export default function Sugestoes(){
     const sugest = [ 
@@ -26,7 +11,7 @@ export default function Sugestoes(){
 
     return(
         <>
-            {sugest.map(dados => <Sugestao img={dados.img} nome={dados.nome} razao={dados.razao}/>)}
+            {sugest.map(dados => <Sugestao key={dados.nome} img={dados.img} nome={dados.nome} razao={dados.razao}/>)}
         </>
        
     )

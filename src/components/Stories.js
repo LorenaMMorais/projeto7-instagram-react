@@ -1,16 +1,4 @@
-function Story(props){
-    const {src, user} = props
-    return(
-        <div class="story">
-            <div class="imagem">
-                <img src={src} alt={user}/>
-            </div>
-            <div class="usuario">
-                {user}
-            </div>
-        </div>
-    )
-}
+import Story from "./Story";
 
 export default function Stories(){
     const stories= [
@@ -24,9 +12,9 @@ export default function Stories(){
         {src:"assets/img/memeriagourmet.svg", user:"memeriagourmet"}
     ]
     return(
-        <div class="stories">
+        <div className="stories">
             {stories.map(dados =>
-                <Story src={dados.src} user={dados.user}/>
+                <Story key={dados.user} src={dados.src} user={dados.user}/>
             )}
         </div>
     )

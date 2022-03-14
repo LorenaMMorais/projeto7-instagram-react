@@ -3,7 +3,7 @@ import Posts from './Posts';
 
 export default function Conteudo(){
     return(
-        <div class="esquerda">
+        <div className="esquerda">
             <Stories/>
             <Posts/>
         </div>

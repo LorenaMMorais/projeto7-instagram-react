@@ -5,11 +5,11 @@ import FundoMobile from './components/FundoMobile';
 
 function App(){
     return(
-        <div>
+        <>
             <Navbar />
             <Corpo />
             <FundoMobile />
-        </div>
+        </>
     )
 }
 ReactDOM.render(<App/>, document.querySelector(".root")); 
