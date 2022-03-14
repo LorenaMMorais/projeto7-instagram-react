@@ -16,7 +16,7 @@ function Sugestao(props){
 }
 
 export default function Sugestoes(){
-    const sugest = [
+    const sugest = [ 
         {img:"assets/img/bad.vibes.memes.svg", nome:"bad.vibes.memes", razao:"Segue você"},
         {img:"assets/img/chibirdart.svg", nome:"chibirdart", razao:"Segue você"},
         {img:"assets/img/razoesparaacreditar.svg", nome:"razoesparaacreditar", razao:"Novo no Instagram"},
