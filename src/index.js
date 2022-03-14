@@ -6,9 +6,9 @@ import FundoMobile from './components/FundoMobile';
 function App(){
     return(
         <div>
-            <Navbar/>
-            <Corpo/>
-            <FundoMobile/>
+            <Navbar />
+            <Corpo />
+            <FundoMobile />
         </div>
     )
 }

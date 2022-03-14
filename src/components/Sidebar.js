@@ -1,11 +1,19 @@
-import Sugestoes from "./Sugestoes";
-import Usuario from "./Usuario";
+import Sugestoes from './Sugestoes';
+import Usuario from './Usuario';
 
 export default function Sidebar(){
     return(
         <div class="sidebar">
-            <Usuario/>
-            <Sugestoes/>
+            <Usuario src="assets/img/catanacomics.svg" nick="catanacomics" nome="Catana"/>
+            
+            <div class="sugestoes">
+                <div class="titulo">
+                    Sugestões para você
+                    <div>Ver tudo</div>
+                </div>
+                <Sugestoes />
+            </div>
+
             
             <div class="links">
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
